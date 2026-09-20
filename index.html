@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Match of a Lifetime - For My Favorite Captain: Deris Alanda ⚽💙</title>
+    <meta name="description" content="Website khusus untuk Deris Alanda (Abang), kapten terhebat dan seseorang yang paling disayang selamanya oleh adek.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Outfit:wght@400;600;700;800;900&family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Canvas Background for Floating Soccer Balls & Hearts -->
+    <canvas id="bgCanvas"></canvas>
+    <canvas id="fireworksCanvas"></canvas>
+
+    <!-- Floating Audio Control -->
+    <div class="audio-control-container">
+        <button id="musicToggleBtn" class="audio-btn" title="Putar Musik Romantis">
+            <i class="fa-solid fa-compact-disc fa-spin-slow" id="musicIcon"></i>
+            <span class="music-label">Backsound Cinta</span>
+        </button>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fa-solid fa-futbol blue-glow"></i>
+                <span class="logo-text">Deris Alanda <span class="heart-badge">❤️</span></span>
+            </div>
+            <nav class="nav-links">
+                <a href="#hero"><i class="fa-solid fa-house"></i> Home</a>
+                <a href="#player-card"><i class="fa-solid fa-trophy"></i> Profil Abang</a>
+                <a href="#moments"><i class="fa-solid fa-camera-retro"></i> Momen Manis</a>
+                <a href="#game"><i class="fa-solid fa-gamepad"></i> Goal Cinta</a>
+                <a href="#expressions"><i class="fa-solid fa-heart"></i> Ungkapan Sayang</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main>
+
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <div class="match-badge">
+                    <span class="pulse-dot"></span> MATCH DAY OF LOVE • CHAMPIONS LEAGUE
+                </div>
+                <h1 class="hero-title">
+                    The Captain of My Heart <br>
+                    <span class="highlight-name">Deris Alanda</span>
+                </h1>
+                <p class="hero-subtitle">
+                    "Untuk <strong>Abang</strong> tersayang, pemain impian yang selalu mencetak gol kebahagiaan di setiap hari adek." ⚽💙
+                </p>
+                <div class="hero-buttons">
+                    <a href="#game" class="btn btn-primary btn-kick">
+                        <i class="fa-solid fa-futbol"></i> Tendang Bola Cinta!
+                    </a>
+                    <a href="#expressions" class="btn btn-secondary">
+                        <i class="fa-solid fa-envelope-open-text"></i> Baca Surat Cinta
+                    </a>
+                </div>
+
+                <!-- Match Score Banner -->
+                <div class="match-score-card">
+                    <div class="team team-left">
+                        <div class="team-avatar">
+                            <i class="fa-solid fa-user-ninja"></i>
+                        </div>
+                        <span class="team-name">Abang (Deris)</span>
+                    </div>
+                    <div class="score-display">
+                        <span class="score-number">100</span>
+                        <span class="score-colon">:</span>
+                        <span class="score-number">100</span>
+                        <span class="match-status">ALWAYS WINNING IN LOVE</span>
+                    </div>
+                    <div class="team team-right">
+                        <div class="team-avatar pink-avatar">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <span class="team-name">Adek (Sayang Abang)</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Player Profile Card Section -->
+        <section id="player-card" class="section-container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fa-solid fa-award"></i> SPECIAL CARD</span>
+                <h2 class="section-title">Man of The Match Selamanya</h2>
+                <p class="section-desc">Kartu pemain paling berharga & tak ternilai harganya di seluruh dunia.</p>
+            </div>
+
+            <div class="player-card-wrapper">
+                <!-- Fut Card Container -->
+                <div class="fut-card" id="futCard">
+                    <div class="card-glow"></div>
+                    <div class="card-top">
+                        <div class="rating-box">
+                            <span class="rating">99</span>
+                            <span class="position">ST</span>
+                            <div class="flag-icon"><i class="fa-solid fa-shield-heart"></i></div>
+                        </div>
+                        <div class="player-photo-container">
+                            <img src="images/abang-gimbal.jpg" alt="Deris Alanda" class="player-photo">
+                        </div>
+                    </div>
+                    <div class="card-bottom">
+                        <h3 class="player-name">DERIS ALANDA</h3>
+                        <p class="player-nickname">"ABANGG" 💙</p>
+                        <div class="card-stats">
+                            <div class="stat-col">
+                                <span><strong>99</strong> PAC (Perhatian)</span>
+                                <span><strong>99</strong> SHO (Senyuman)</span>
+                                <span><strong>99</strong> PAS (Penyayang)</span>
+                            </div>
+                            <div class="stat-divider"></div>
+                            <div class="stat-col">
+                                <span><strong>99</strong> DRI (Daya Tarik)</span>
+                                <span><strong>99</strong> DEF (Melindungi)</span>
+                                <span><strong>100</strong> LOV (Cinta Sejati)</span>
+                            </div>
+                        </div>
+                        <div class="card-badge">
+                            <i class="fa-solid fa-crown"></i> Official Captain of My Heart
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Info Cards Right -->
+                <div class="player-info-details">
+                    <div class="info-box">
+                        <div class="info-icon"><i class="fa-solid fa-futbol"></i></div>
+                        <div class="info-text">
+                            <h4>Hobi Utama Abang</h4>
+                            <p>Sangat menyukai Sepak Bola! Punya semangat tinggi, sportif, dan selalu energik saat di lapangan maupun di keseharian.</p>
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="info-icon"><i class="fa-solid fa-face-smile-beam"></i></div>
+                        <div class="info-text">
+                            <h4>Alasan Selalu Bikin Jatuh Cinta</h4>
+                            <p>Senyum Abang yang manis, kehangatan Abang pas ngobrol, dan cara Abang memperlakukan adek dengan sangat lembut.</p>
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="info-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                        <div class="info-text">
+                            <h4>Pelindung & Rumah Nyaman</h4>
+                            <p>Bersama Abang, adek selalu merasa aman, dihargai, dan dicintai sepenuh hati.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mini Game Goal of Love Section -->
+        <section id="game" class="section-container game-section">
+            <div class="section-header">
+                <span class="section-tag"><i class="fa-solid fa-futbol"></i> INTERACTIVE MATCH</span>
+                <h2 class="section-title">Goal of Love Challenge ⚽💥</h2>
+                <p class="section-desc">Klik atau tekan tombol tendang di bawah untuk memasukkan bola ke gawang & buka kejutan manis dari adek!</p>
+            </div>
+
+            <div class="stadium-pitch">
+                <div class="pitch-lines">
+                    <div class="center-circle"></div>
+                    <div class="penalty-box"></div>
+                </div>
+
+                <div class="goal-posts">
+                    <div class="net-pattern"></div>
+                    <div class="goal-target" id="goalTarget">
+                        <span>AIM HERE! GOAL ⚽</span>
+                    </div>
+                </div>
+
+                <!-- Animated Soccer Ball -->
+                <div class="soccer-ball" id="soccerBall">
+                    <div class="ball-pattern"></div>
+                </div>
+
+                <!-- Kick Controls -->
+                <div class="pitch-controls">
+                    <button class="btn btn-kick-big" id="kickBallBtn">
+                        <i class="fa-solid fa-play"></i> TENDANG BOLA SEKARANG! ⚽
+                    </button>
+                    <div id="gameMessage" class="game-msg">
+                        Tekan tombol untuk mencetak GOL CINTA ke gawang Abang!
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery / Sweet Moments Section -->
+        <section id="moments" class="section-container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fa-solid fa-images"></i> MATCH HIGHLIGHTS</span>
+                <h2 class="section-title">Momen Manis Bersama Abang 📸✨</h2>
+                <p class="section-desc">Kumpulan foto-foto indah dan bahagia yang paling berkesan saat bersama Deris Alanda.</p>
+            </div>
+
+            <div class="gallery-grid">
+
+                <!-- Card 1: Seragam Biru UNCP -->
+                <div class="gallery-card" data-img="images/moment-seragam-biru.jpg" data-title="Kompak Seragam Biru Media UNCP 💙" data-desc="Foto favorit adek & abang pakai kemeja biru persis seperti tema website ini! Kompak, serasi, dan selalu berdampingan bersama Abang.">
+                    <div class="gallery-img-wrapper">
+                        <img src="images/moment-seragam-biru.jpg" alt="Momen Seragam Biru UNCP">
+                        <div class="gallery-badge"><i class="fa-solid fa-star"></i> Top Highlight</div>
+                    </div>
+                    <div class="gallery-content">
+                        <h3>Seragam Biru Kesayangan</h3>
+                        <p>Kompak berdua pakai seragam biru, momen manis bareng Abang yang selalu bikin kangen.</p>
+                        <span class="btn-view-photo"><i class="fa-solid fa-expand"></i> Lihat Foto Penuh</span>
+                    </div>
+                </div>
+
+                <!-- Card 2: Kafe Rose & Plushie -->
+                <div class="gallery-card" data-img="images/moment-cafe-bunga.jpg" data-title="Kencan Manis, Bunga Pink & Boneka Lucu 🌹" data-desc="Momen manis di kafe waktu menikmati kentang goreng dan minuman segar, lengkap dengan mawar pink dan boneka lucu bareng Abang tersayang.">
+                    <div class="gallery-img-wrapper">
+                        <img src="images/moment-cafe-bunga.jpg" alt="Kencan Kafe Bunga & Boneka">
+                        <div class="gallery-badge"><i class="fa-solid fa-heart"></i> Sweet Date</div>
+                    </div>
+                    <div class="gallery-content">
+                        <h3>Bunga & Senyum Manis Abang</h3>
+                        <p>Duduk santai di kafe, pegang mawar pink & boneka lucu, ditemani Abang yang selalu hangat.</p>
+                        <span class="btn-view-photo"><i class="fa-solid fa-expand"></i> Lihat Foto Penuh</span>
+                    </div>
+                </div>
+
+                <!-- Card 3: Malam Bersama -->
+                <div class="gallery-card" data-img="images/moment-malam.jpg" data-title="Malam Penuh Kehangatan 🌙✨" data-desc="Di bawah remang lampu malam, senyuman Abang selalu berhasil mencerahkan suasana dan bikin hati terasa damai.">
+                    <div class="gallery-img-wrapper">
+                        <img src="images/moment-malam.jpg" alt="Foto Bersama Malam Hari">
+                        <div class="gallery-badge"><i class="fa-solid fa-moon"></i> Romantic Night</div>
+                    </div>
+                    <div class="gallery-content">
+                        <h3>Malam Bersama Abang</h3>
+                        <p>Setiap momen malam hari bareng Abang rasanya tenang dan penuh kebahagiaan sederhana.</p>
+                        <span class="btn-view-photo"><i class="fa-solid fa-expand"></i> Lihat Foto Penuh</span>
+                    </div>
+                </div>
+
+                <!-- Card 4: Foto Terkeren Abangg -->
+                <div class="gallery-card" data-img="images/abang-motor.jpg" data-title="Foto Terkeren Abangg 🏍️💙" data-desc="Foto terkeren abangg dengan kacamata hitam di samping motor custom kesayangan. Always cool, ganteng, dan berkarisma!">
+                    <div class="gallery-img-wrapper">
+                        <img src="images/abang-motor.jpg" alt="Foto Terkeren Abangg">
+                        <div class="gallery-badge"><i class="fa-solid fa-motorcycle"></i> Coolest Moment</div>
+                    </div>
+                    <div class="gallery-content">
+                        <h3>Foto Terkeren Abangg</h3>
+                        <p>Gaya santai tapi super keren! Foto terkeren abangg yang selalu bikin adek bangga.</p>
+                        <span class="btn-view-photo"><i class="fa-solid fa-expand"></i> Lihat Foto Penuh</span>
+                    </div>
+                </div>
+
+                <!-- Card 5: Abang & Gimbal Kamera -->
+                <div class="gallery-card" data-img="images/abang-gimbal.jpg" data-title="Abang Sang Videografer Handal 🎥" data-desc="Potret Abang pas pegang kamera gimbal di lapangan. Keren, berdedikasi, dan selalu kelihatan fokus dengan apa yang dikerjakan.">
+                    <div class="gallery-img-wrapper">
+                        <img src="images/abang-gimbal.jpg" alt="Abang Memegang Kamera Gimbal">
+                        <div class="gallery-badge"><i class="fa-solid fa-camera"></i> Champion Skill</div>
+                    </div>
+                    <div class="gallery-content">
+                        <h3>Abang Dengan Kamera</h3>
+                        <p>Abang pas lagi karya atau bertugas, selalu keren & penuh karisma!</p>
+                        <span class="btn-view-photo"><i class="fa-solid fa-expand"></i> Lihat Foto Penuh</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Love Letter / Expressions Section -->
+        <section id="expressions" class="section-container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fa-solid fa-heart"></i> LETTER FOR ABANG</span>
+                <h2 class="section-title">Betapa Sayangnya Adek Sama Abang 💙</h2>
+                <p class="section-desc">Pesan khusus dari lubuk hati yang paling dalam untuk Deris Alanda.</p>
+            </div>
+
+            <div class="love-letter-card">
+                <div class="letter-stamp"><i class="fa-solid fa-stamp"></i> OFFICIAL LOVE PASSPORT</div>
+                <div class="letter-body">
+                    <p class="letter-salutation">Hai <strong>Abang (Deris Alanda)</strong> tersayang...</p>
+                    <p>
+                        Website bertema biru dan bola ini sengaja adek buat khusus untuk Abang, karena adek tahu betapa Abang sangat menyukai sepak bola. Tapi Abang tahu gak? Kalau di sepak bola Abang punya klub kesayangan, di hati adek **Abang adalah satu-satunya juara bertahan yang tidak pernah tergantikan**.
+                    </p>
+                    <p>
+                        Terima kasih ya Bang, sudah selalu ada, sudah selalu sabar, dan sudah menghadirkan banyak momen manis yang bikin adek bahagia. Setiap senyuman Abang, tawa Abang, dan perhatian kecil Abang selalu sukses bikin hari adek terasa jauh lebih indah.
+                    </p>
+                    <p>
+                        Adek sayang banget sama Abang. Semoga website ini bisa bikin Abang tersenyum lebar dan ingat kalau kapan pun dan di mana pun, **ada seseorang yang sangat bangga dan mencintai Abang sepenuh hati**.
+                    </p>
+                    <div class="letter-signature">
+                        <span>Dengan seluruh cintaku,</span>
+                        <h4 class="signature-name">Adek yang Selalu Sayang Abang ❤️</h4>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reasons Grid -->
+            <div class="reasons-title-wrapper">
+                <h3><i class="fa-solid fa-trophy"></i> 4 Alasan Kenapa Abang Sangat Spesial</h3>
+            </div>
+            <div class="reasons-grid">
+                <div class="reason-card">
+                    <div class="reason-num">01</div>
+                    <div class="reason-icon"><i class="fa-solid fa-heart-circle-check"></i></div>
+                    <h4>Penuh Perhatian</h4>
+                    <p>Abang selalu tahu cara memperlakukan adek dengan hangat dan membuatku merasa berharga setiap saat.</p>
+                </div>
+
+                <div class="reason-card">
+                    <div class="reason-num">02</div>
+                    <div class="reason-icon"><i class="fa-solid fa-smile-wink"></i></div>
+                    <h4>Senyuman Paling Manis</h4>
+                    <p>Setiap melihat tawa Abang, rasanya semua rasa lelah hilang berganti kebahagiaan.</p>
+                </div>
+
+                <div class="reason-card">
+                    <div class="reason-num">03</div>
+                    <div class="reason-icon"><i class="fa-solid fa-shield-heart"></i></div>
+                    <h4>Kerja Keras & Semangat</h4>
+                    <p>Abang itu sosok yang mandiri, pekerja keras, dan punya dedikasi tinggi dalam hal apa pun.</p>
+                </div>
+
+                <div class="reason-card">
+                    <div class="reason-num">04</div>
+                    <div class="reason-icon"><i class="fa-solid fa-infinity"></i></div>
+                    <h4>Selamanya Juara</h4>
+                    <p>Bagi adek, Abang bukan sekadar pasangan, tapi juga sahabat terbaik dan tempat berpulang paling nyaman.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Match Pass Ticket Section -->
+        <section class="section-container">
+            <div class="ticket-card">
+                <div class="ticket-left">
+                    <div class="ticket-header">
+                        <i class="fa-solid fa-ticket"></i> MATCH TICKET PASS • FOREVER TOGETHER
+                    </div>
+                    <div class="ticket-teams">
+                        <span class="team-lbl">DERIS ALANDA</span>
+                        <span class="vs">VS</span>
+                        <span class="team-lbl">MY HEART</span>
+                    </div>
+                    <div class="ticket-info">
+                        <div><span>VENUE:</span> Every Sweet Moment</div>
+                        <div><span>DATE:</span> Today & Forever</div>
+                        <div><span>SEAT:</span> #1 VIP Love Suite</div>
+                    </div>
+                </div>
+                <div class="ticket-divider"></div>
+                <div class="ticket-right">
+                    <div class="barcode">||| | |||| | ||| |||| | ||</div>
+                    <div class="ticket-code">ABANG-FOREVER-100%</div>
+                    <div class="status-valid">VALID FOR LIFE</div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Photo Lightbox Modal -->
+    <div id="photoModal" class="modal">
+        <span class="modal-close" id="modalClose">&times;</span>
+        <div class="modal-content">
+            <img id="modalImg" src="" alt="Momen Manis">
+            <div class="modal-caption">
+                <h3 id="modalTitle"></h3>
+                <p id="modalDesc"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Goal Celebration Modal -->
+    <div id="goalModal" class="modal">
+        <div class="modal-content goal-modal-content">
+            <div class="goal-header-badge">
+                <i class="fa-solid fa-trophy"></i> GOAL OF LOVE!
+            </div>
+            <h2>SELEBRASI GOL CINTA UNTUK ABANG! ⚽🎉</h2>
+            <p>
+                Tendangan Abang berhasil menembus gawang dan mencetak gol kemenangan paling manis!
+            </p>
+            <div class="goal-quote">
+                "Deris Alanda (Abang) adalah alasan kenapa setiap hari terasa seperti merayakan gelar juara liga!" 🏆💙
+            </div>
+            <button class="btn btn-primary" id="closeGoalModal">
+                <i class="fa-solid fa-heart"></i> Peluk Abang Sekarang!
+            </button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>Dibuat dengan segenap cinta khusus untuk <strong>Deris Alanda (Abang)</strong> ⚽💙</p>
+            <p class="copyright">© 2026 Match of a Lifetime • Forever & Always</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>
